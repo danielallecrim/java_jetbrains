@@ -15,26 +15,12 @@ public class GradeMessage {
         String grade = Scanner.next();
         scanner.close();
 
-        String message;
-        switch(grade){
-            case "A":
-                message = "Excelent job!";
-                break;
-            case "B":
-                message = "Great job!";
-                break;
-            case "C":
-                message = "Good job!";
-                break;
-            case "D":
-                message = "You need to work a bit harder";
-                break;
-            case "F":
-                message = "Uh oh!";
-                break;
-            default:
-                message = "Error. Invalid grade";
-                break;
+        String message = switch(grade){
+            case "A","B" -> message = "Excelent job!";
+            case "C" -> message = "Good job!";
+            case "D" -> message = "You need to work a bit harder";
+            case "F" -> message = "Uh oh!";
+            default -> message = "Error. Invalid grade";
         }
     }
 }
