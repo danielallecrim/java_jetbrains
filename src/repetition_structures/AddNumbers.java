@@ -1,5 +1,6 @@
 package repetition_structures;
 
+import java.util.Scanner;
 public class AddNumbers {
     public static void main(String[] args) {
 

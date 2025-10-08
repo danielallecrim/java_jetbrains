@@ -6,7 +6,7 @@ public class QuotaChecker {
     public static void main(String[] args) {
 
         //initialize known values
-        int quota = 10;
+        int quotas = 10;
 
         //Get values for the unknown
         System.out.println("How many sales did you make this week?");
@@ -18,7 +18,7 @@ public class QuotaChecker {
         if(sales >= quotas){
             System.out.println("Congrats! You've met your quota.");
         }else{
-            int salesShort = quota - sales;
+            int salesShort = quotas- sales;
             System.out.println("You did not make your quota. You were " + salesShort + " sales short.");
         }
     }

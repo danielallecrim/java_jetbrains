@@ -12,7 +12,7 @@ public class GradeMessage {
 
         System.out.println("Enter your letter grade:");
         Scanner scanner = new Scanner(System.in);
-        String grade = Scanner.next();
+        String grade = scanner.next();
         scanner.close();
 
         String message = switch(grade){
@@ -21,6 +21,6 @@ public class GradeMessage {
             case "D" -> message = "You need to work a bit harder";
             case "F" -> message = "Uh oh!";
             default -> message = "Error. Invalid grade";
-        }
+        };
     }
 }
