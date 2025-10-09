@@ -1,5 +1,7 @@
 package objects;
 
+import java.util.Scanner;
+
 public class HomeAreaCalculatorWithMethods {
 
     static Scanner scanner = new Scanner(System.in);

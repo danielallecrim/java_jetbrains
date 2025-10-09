@@ -15,7 +15,7 @@ public class Rectangle {
     }
 
     public double calculatePerimeter(){
-        return (2 * lenght) + (2 * width);
+        return (2 * length) + (2 * width);
     }
 
     public double calculateArea(){
@@ -27,7 +27,7 @@ public class Rectangle {
     }
 
     public void setLength(double length){
-        this.lenght = length;
+        this.length = length;
     }
 
     public double getWidth(){
